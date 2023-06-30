@@ -1,0 +1,29 @@
+.footer{
+    background-color: var(--color-white);
+
+    &_top{
+        padding: 2rem 0;
+        display: flex;
+        place-content: space-between;
+        place-items: flex-start;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &_item{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &_shared{
+            display: flex;
+            place-content: space-around;
+            gap: 2rem;
+        }
+
+        a{
+            font-weight: normal;
+            color: var(--color-black);
+        }
+    }
+}

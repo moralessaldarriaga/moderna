@@ -1,0 +1,48 @@
+.banner{
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+
+    @media only screen and (max-width: 768px) {
+        padding: 0 1rem;
+    }
+
+    &_item{
+        width: 100%;
+        min-height: 750px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex !important;
+        place-content: center;
+        place-items: center;
+        margin-bottom: 50px;
+
+        @media only screen and (max-width: 768px) {
+            border-radius: 20px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            min-height: 400px;
+        }
+
+        &__paracas{
+            background-image: url('/src/images/banner/banner__paracas.jpg');
+        }
+
+        &__moyobamba{
+            background-image: url('/src/images/banner/banner__moyobamba.jpg');
+        }
+
+        &_info{
+            padding: 0 1rem;
+            position: absolute;
+            bottom: 14px;
+
+            @media only screen and (max-width: 600px) {
+                bottom: 30px;
+            }
+        }
+    }
+
+}

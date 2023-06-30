@@ -1,0 +1,24 @@
+
+:root{
+    --color-white: #fff;
+    --color-black: #000;
+    --main-color: #ff9408;
+    --second-color: #fff700;
+    --three-color: #0076b7;
+    --font: 'Gotham Rounded';
+    --font-size-main: 16px;
+    --tablet-breakpoint: 768px;
+    --phone-breakpoint: 600px;
+    font-family: var(--font), system-ui, Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: var(--font-size-main);
+  
+    // color-scheme: light dark;
+    color: var(--color-white);
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}

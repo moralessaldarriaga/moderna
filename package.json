@@ -1,0 +1,20 @@
+{
+  "name": "moderna-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.58.3",
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "gh-pages": "^5.0.0",
+    "jquery": "^3.6.4",
+    "slick-carousel": "^1.8.1"
+  }
+}
