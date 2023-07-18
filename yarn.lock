@@ -353,6 +353,11 @@ inherits@2:
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
 
+intl-tel-input@^18.1.8:
+  version "18.1.8"
+  resolved "https://registry.yarnpkg.com/intl-tel-input/-/intl-tel-input-18.1.8.tgz#7ea7f03dae08624a01b608a8a7edef7584bfb2d0"
+  integrity sha512-dPrCYwmjkjJOMw0XfyET+jSvbS+GFh6sOAFV5NpHK+jQXoXz8xsQLAoLmzjGktl2o3QhgBhyLTaNGyN0ZEx3cA==
+
 is-binary-path@~2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/is-binary-path/-/is-binary-path-2.1.0.tgz#ea1f7f3b80f064236e83470f86c09c254fb45b09"
@@ -531,6 +536,11 @@ semver@^6.0.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
+simplelightbox@^2.14.1:
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/simplelightbox/-/simplelightbox-2.14.1.tgz#9fa0f41e4599e49b8dc2f92f8dc01cdca04bed4e"
+  integrity sha512-REeHJetP+vq4hbKDkTf8apu7jAYOHws7PWc1j30O0q79NMIrg9g72smCyKWNTFyZtWdEd7WEu9DIClaG42s3Xg==
 
 slick-carousel@^1.8.1:
   version "1.8.1"

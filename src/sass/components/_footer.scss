@@ -2,12 +2,28 @@
     background-color: var(--color-white);
 
     &_top{
+        background-color: var(--color-white);
+
+        &_block{
+            padding: 3.75rem 0 2rem 0;
+            display: flex;
+            place-content: space-between;
+            place-items: flex-start;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+    }
+
+    &_bottom{
+        background-color: var(--color-black);
         padding: 2rem 0;
-        display: flex;
-        place-content: space-between;
-        place-items: flex-start;
-        flex-wrap: wrap;
-        gap: 2rem;
+
+        &_block{
+            display: flex;
+            place-content: space-between;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
     }
 
     &_item{

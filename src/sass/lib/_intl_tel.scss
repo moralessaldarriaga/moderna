@@ -1,0 +1,53 @@
+.iti{
+    width: 100%;
+}
+
+.iti__arrow{
+    margin-left: 10px !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-image: url('/src/images/arrow__down.png');
+    background-repeat: no-repeat;
+    background-size: 20px !important;
+    border-left: unset !important;
+    border-top: unset !important;
+}
+
+.iti__arrow--up{
+    border-bottom: unset !important;
+}
+
+.iti__country-list{
+    color: var(--color-black);
+    margin: 0 0 0 0 !important;
+}
+
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel]{
+    padding-right: 1rem !important;
+    // padding-left: 8rem !important;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag{
+    background-color: transparent !important;
+}
+
+.iti__flag-container{
+    // left: 1rem !important;
+    display: flex;
+    place-items: center;
+}
+
+.iti__selected-flag{
+    padding: 0 !important;
+}
+
+.iti--separate-dial-code .iti__selected-flag{
+    padding: 1px 10px 0 14px !important;
+    background-color: transparent !important;
+    border-right: 1px solid var(--color-gray);
+    height: auto !important;
+}
+
+.iti__selected-dial-code{
+    color: var(--color-black);
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Moderna</title>
   </head>
   <body>
@@ -40,9 +40,35 @@
                 <a href="/blog" rel="noopener noreferrer">Blog</a>
               </li>
             </ul>
+            <div class="menu_actions">
+              <img class="menu_actions_open" src="/src/images/menu__open.png" alt="menu open" width="50" height="50">
+              <img class="menu_actions_close menu_actions__hide" src="/src/images/menu__close.png" alt="menu close" width="50" height="50">
+            </div>
           </div>
         </div>
       </nav>
+
+      <section class="nav">
+        <div class="main_content">
+          <ul>
+            <li>
+              <a href="">Proyectos</a>
+            </li>
+            <li>
+              <a href="">Refiere y gana</a>
+            </li>
+            <li>
+              <a href="">Nosotros</a>
+            </li>
+            <li>
+              <a href="">Contáctanos</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <section class="banner">
         <div class="banner_slider banner__js">
@@ -154,40 +180,108 @@
           </div>
         </div>
       </section>
+
+      <section class="buy">
+        <div class="main_content">
+          <div class="buy_container">
+            <picture class="buy_girl">
+              <source media="(max-width:1300px)" srcset="/src/images/buy__title.png" alt="buy title" width="630" height="88">
+              <img src="/src/images/buy__girl.png" alt="buy girl" width="728" height="824">
+            </picture>
+            <form class="form form__buy" id="form">
+              <h2>Quiero recibir información</h2>
+              <div class="form_block">
+                <div class="form_group">
+                  <input type="text" class="form_control form_control__light" placeholder="Nombres" name="name" required>
+                </div>
+                <div class="form_group">
+                  <input type="text" class="form_control form_control__light" placeholder="Apellidos" name="fullname" required>
+                </div>
+                <div class="form_group">
+                  <input type="email" class="form_control form_control__light" placeholder="Correo Electrónico" name="email" required>
+                </div>
+                <div class="form_group">
+                  <select class="form_control form_control__light select" name="type_document" required>
+                    <option value="0" selected disabled>Documento</option>
+                    <option value="1">DNI</option>
+                    <option value="2">Carnet de extranjeria</option>
+                  </select>
+                </div>
+                <div class="form_group">
+                  <input type="text" class="form_control form_control__light" placeholder="No. documento" name="number_document" required>
+                </div>
+                <div class="form_group">
+                  <input type="tel" class="form_control form_control__light" placeholder="Teléfono" id="phone" name="phone" required>
+                </div>
+                <div class="form_group">
+                  <select class="form_control form_control__light select" name="type_document" required>
+                    <option value="0" selected disabled>¿Dónde quieres vivir?</option>
+                    <option value="1">DNI</option>
+                    <option value="2">Carnet de extranjeria</option>
+                  </select>
+                </div>
+                <div class="form_group">
+                  <input type="checkbox" id="terms_1" name="terms_1" value="terms_1">
+                  <label for="terms_1">He leído y acepto los <a href="" target="_blank">Términos y Condiciones</a> y la <a href="" target="_blank">Política de Privacidad</a></label>
+                </div>
+                <div class="form_group">
+                  <input type="checkbox" id="terms_2" name="terms_2" value="terms_2">
+                  <label for="terms_2">Acepto el envío de Publicidad según <a href="" target="_blank">Política de Privacidad</a></label>
+                </div>
+                <div class="form_group">
+                  <input type="checkbox" id="terms_3" name="terms_3" value="terms_3">
+                  <label for="terms_3">Acepto el perfilamiento según <a href="" target="_blank">Política de Privacidad</a></label>
+                </div>
+                <div class="form_group">
+                  <a href="" class="btn">Solicitar información →</a>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="main_content">
-        <div class="footer_container">
-          <div class="footer_top">
-            <div class="footer_item">
-              <img src="/src/images/logo_moderna_vivienda.png" alt="logo moderna vivienda" width="203" height="31">
-              <a href="" rel="noopener noreferrer">Proyectos</a>
-              <a href="" rel="noopener noreferrer">Refiere y gana</a>
-            </div>
-            <div class="footer_item">
-              <a href="" rel="noopener noreferrer">Términos y condiciones</a>
-              <a href="" rel="noopener noreferrer">Políticas de Privacidad</a>
-              <div class="footer_item_shared">
-                <a href="" rel="noopener noreferrer">
-                  <img src="/src/images/facebook.png" alt="facebook" width="39" height="39">
-                </a>
-                <a href="" rel="noopener noreferrer">
-                  <img src="/src/images/insta.png" alt="instagram" width="39" height="39">
-                </a>
-                <a href="" rel="noopener noreferrer">
-                  <img src="/src/images/tiktok.png" alt="tiktok" width="39" height="39">
-                </a>
+      <div class="footer_top">
+        <div class="footer_top">
+          <div class="main_content">
+            <div class="footer_top_block">
+              <div class="footer_item">
+                <img src="/src/images/logo_moderna_vivienda.png" alt="logo moderna vivienda" width="203" height="31">
+                <a href="" rel="noopener noreferrer">Proyectos</a>
+                <a href="" rel="noopener noreferrer">Refiere y gana</a>
+              </div>
+              <div class="footer_item">
+                <a href="" rel="noopener noreferrer">Términos y condiciones</a>
+                <a href="" rel="noopener noreferrer">Políticas de Privacidad</a>
+                <div class="footer_item_shared">
+                  <a href="" rel="noopener noreferrer">
+                    <img src="/src/images/facebook.png" alt="facebook" width="39" height="39">
+                  </a>
+                  <a href="" rel="noopener noreferrer">
+                    <img src="/src/images/insta.png" alt="instagram" width="39" height="39">
+                  </a>
+                  <a href="" rel="noopener noreferrer">
+                    <img src="/src/images/tiktok.png" alt="tiktok" width="39" height="39">
+                  </a>
+                </div>
+              </div>
+              <div class="footer_item">
+                <img src="/src/images/logo_moderna_vivienda__black.png" alt="logo moderna vivienda" width="203" height="31">
+                <img src="/src/images/ico__book.png" alt="ico book" width="33" height="23">
+                <a href="" rel="noopener noreferrer">Libro de reclamaciones</a>
+                <a href="" rel="noopener noreferrer">Contacto</a>
               </div>
             </div>
-            <div class="footer_item">
-              <img src="/src/images/logo_moderna_vivienda__black.png" alt="logo moderna vivienda" width="203" height="31">
-              <a href="" rel="noopener noreferrer">Libro de reclamaciones</a>
-              <a href="" rel="noopener noreferrer">Contacto</a>
-            </div>
           </div>
-          <div class="footer_bottom">
-
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="main_content">
+          <div class="footer_bottom_block">
+            <p>Copyright 2023 Modernavivienda.pe - Todos los derechos reservados</p>
+            <p>Hecho por Aliada.</p>
           </div>
         </div>
       </div>

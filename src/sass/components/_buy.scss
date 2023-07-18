@@ -1,0 +1,42 @@
+.buy{
+    background-color: var(--main-color);
+    min-height: 625px;
+    // padding: 6rem 0;
+    margin: 5rem 0 4rem 0;
+
+    @media only screen and (max-width: 1300px) {
+       height: initial;
+       padding: 6rem 0;
+       margin: 0; 
+    }
+
+    &_container{
+        position: relative;
+        display: flex;
+        place-content: flex-end;
+        gap: 2rem;
+    
+        @media only screen and (max-width: 1300px) {
+            flex-direction: column;
+            place-items: center;
+         }
+    }
+
+    &_girl{
+        display: flex;
+        position: absolute;
+        top: -150px;
+        left: 0;
+
+        @media only screen and (max-width: 1300px) {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            display: flex;
+            position: relative;
+            top: unset;
+            left: unset;
+        }
+    }
+}

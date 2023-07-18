@@ -10,10 +10,20 @@
         padding: 3rem 0 6rem 0;
     }
 
+    &__pt0{
+        padding: 0 0 6rem 0;
+
+        @media only screen and (max-width: 1300px) {
+            padding: 0 0 6rem 0;
+        }
+    }
+
     &_title{
         display: flex;
         place-content: space-between;
         place-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
 
         h1{
             font-size: 1.8rem;
@@ -29,13 +39,14 @@
 
     &_projects{
         padding-top: 3.125rem;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
         place-content: space-between;
         place-items: center;
-        gap: 3rem;
+        gap: 5rem 3rem;
 
-        @media only screen and (max-width: 768px) {
-            flex-wrap: wrap;
+        @media only screen and (max-width: 600px) {
+            grid-template-columns: 1fr;
         }
 
         &_item{
@@ -79,6 +90,10 @@
                         &.step{
                             color: var(--color-black);
                             background-color: var(--main-color);
+
+                            &__yellow{
+                                background-color: var(--second-color);
+                            }
                         }
 
                         &.point{
@@ -90,7 +105,12 @@
             }
 
             h2{
+                color: var(--color-white);
                 font-size: 2.5rem;
+
+                @media only screen and (max-width: 600px) {
+                    font-size: 2rem;
+                }
             }
 
             a{

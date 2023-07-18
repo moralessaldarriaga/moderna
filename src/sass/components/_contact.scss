@@ -1,0 +1,37 @@
+.contact{
+    padding: 4rem 0 7rem 0;
+
+    @media only screen and (max-width: 1300px) {
+        padding: 4rem 0;
+    }
+
+    &_container{
+        padding: 0 4rem;
+        display: flex;
+        flex-direction: column;
+        place-content: center;
+        place-items: center;
+
+        @media only screen and (max-width: 1300px) {
+            padding: 0;
+        }
+
+        p{
+            text-align: center;
+            color: var(--color-black);
+            font-weight: 500;
+            font-size: 1.5rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &_block{
+        margin-top: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row-reverse wrap;
+        place-content: center;
+        place-items: center;
+        gap: 2rem 3rem;
+    }
+}

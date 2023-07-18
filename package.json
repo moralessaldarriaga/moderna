@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "gh-pages": "^5.0.0",
+    "intl-tel-input": "^18.1.8",
     "jquery": "^3.6.4",
+    "simplelightbox": "^2.14.1",
     "slick-carousel": "^1.8.1"
   }
 }
